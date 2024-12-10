@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問3,4</title>
+</head>
+<body>
+    <ul class="mylist">
+
+    </ul>
+    <script>
+        let ary=['あ','い','う'];
+        document.body.textContent=ary[1];
+        let ul=document.createElement('ul');
+
+
+        ary.forEach(el=>{
+            let li=document.createElement('li');
+            li.textContent=el;
+            ul.append(li);
+
+
+        });
+    document.body.append(ul);
+    </script>
+</body>
+</html>

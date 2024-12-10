@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問１</title>
+</head>
+<body>
+    <div class="box1">クリック</div>
+    <div class="box2">スライド</div>
+    <style>
+        .box1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    cursor: pointer;
+
+    
+    
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+
+    
+}
+    </style>
+    <script>
+        document.querySelector('.box1').addEventListener('click', function(){
+        const box2 =document.querySelector('.box2');
+        box2.style.transform='translateX(-100px)';
+        });
+    </script>
+</body>
+</html>
